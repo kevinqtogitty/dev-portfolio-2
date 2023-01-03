@@ -1,5 +1,60 @@
 [
   {
+    "projectName": "Photography Portfolio",
+    "thumbnail": "/project_photos/photography.jpg",
+    "gif": "../../assets/gifs/photo-website.gif",
+    "info": {
+      "card_description": "Photography portfolio and E-commerce store powered by Stripe",
+      "description": "A desktop/mobile friendly website to host my personal photography projects. Has a print store which uses the prebuilt checkout from the Stripe API. Store cart state migrated from Context API to Redux Toolkit.",
+      "bulletPoints": [
+        "Implemented payment and billing functionality via Stripe API",
+        "Reduced global content delivery wait times by deploying to Cloudflare CDN",
+        "Developed with a mobile first design approach",
+        "Implemented Redux Toolkit to manage global state"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typescript",
+      "Redux Toolkit",
+      "React-Spring",
+      "Stripe",
+      "React-Router",
+      "Vercel",
+      "Cloudflare"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/rebuilt-personal-photo-website",
+    "liveUrl": "https://www.kevinqtophoto.com/",
+    "isFullyFunctional": true
+  },
+  {
+    "projectName": "HURON Hotel Landing Page",
+    "thumbnail": "/project_photos/reeltalk.jpg",
+    "gif": "../../assets/gifs/hotel-page.gif",
+    "info": {
+      "card_description": "Modern and fully responsive landing page for HURON hotel, inspired by Japanese design",
+      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. It randomly retrieves a random cocktail recipe. Made for bartenders who need to brainstorm ideas for drink specials, and party people!",
+      "bulletPoints": [
+        "Developed with a mobile first approach",
+        "Implements intersection observer for scroll based navigation style change",
+        "Optimized images using webp file format"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typescript",
+      "Vanilla CSS",
+      "React-Spring",
+      "Radix-UI",
+      "Vercel"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/hotel-page",
+    "liveUrl": "https://hotel-page-psi.vercel.app/",
+    "isFullyFunctional": true
+  },
+  {
     "projectName": "Random Cocktail Generator",
     "thumbnail": "/project_photos/reeltalk.jpg",
     "gif": "../../assets/gifs/random-cocktail.gif",
@@ -7,7 +62,8 @@
       "card_description": "A funky minimalist cocktail generator using CocktailDB",
       "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. It randomly retrieves a random cocktail recipe. Made for bartenders who need to brainstorm ideas for drink specials, and party people!",
       "bulletPoints": [
-        "Optimized for accessability by implementing micro-interactions with keyboard events",
+        "Optimized for accessbility by implementing keyboard events",
+        "Implemeneted micro-interactions for increased user engagement",
         "Implemented a hidden history menu to maximize screen real-estate",
         "Implemented physics based animations using React-Spring"
       ]
@@ -15,7 +71,7 @@
     "technologies": [
       "Vite",
       "React",
-      "Typscript",
+      "Typescript",
       "Axios",
       "Vanilla CSS",
       "Vercel"
@@ -33,7 +89,7 @@
       "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a ScreenName and private room, other users can join that room given the code and chat with each other. Yes, it even contains those familiar AIM notification sounds!",
       "bulletPoints": [
         "Developed a realtime chat application in the style of AIM from windows XP",
-        "Implemented websockets w/ socket.io to allow for realtime updates between users",
+        "Implemented websockets w/ socket.io for instant updates between users",
         "Implemented notification sounds of the original AOL messenger"
       ]
     },
@@ -51,36 +107,6 @@
     "isFullyFunctional": false
   },
   {
-    "projectName": "Photography Portfolio",
-    "thumbnail": "/project_photos/photography.jpg",
-    "gif": "../../assets/gifs/photo-website.gif",
-    "info": {
-      "card_description": "Photography portfolio and E-commerce store powered by Stripe",
-      "description": "A desktop/mobile friendly website to host my personal photography projects. Has a print store which uses the prebuilt checkout from the Stripe API. Store cart state migrated from Context API to Redux Toolkit.",
-      "bulletPoints": [
-        "Implemented payment and billing functionality via Stripe API",
-        "Reduced global content delivery wait times by deploying to a CDN (Cloud Distributed Network)",
-        "Implemented a mobile first design providing users an improved viewing experience on mobile devices",
-        "Improved user experience using physics based animations w/ React-Spring",
-        "Implemented Redux Toolkit to manage state"
-      ]
-    },
-    "technologies": [
-      "Vite",
-      "React",
-      "Typescript",
-      "Redux Toolkit",
-      "React-Spring",
-      "Stripe",
-      "React-Router",
-      "Vercel",
-      "CloudFlare"
-    ],
-    "githubUrl": "https://github.com/kevinqtogitty/rebuilt-personal-photo-website",
-    "liveUrl": "https://www.kevinqtophoto.com/",
-    "isFullyFunctional": true
-  },
-  {
     "projectName": "Announce It!",
     "thumbnail": "/project_photos/announce_it.jpg",
     "gif": "../../assets/gifs/announce-it.gif",
@@ -88,11 +114,11 @@
       "card_description": "Fullstack MERN Team announcement application",
       "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
       "bulletPoints": [
-        "Implemented user authentication and verification to secure sensitive user and application data using Firebase",
+        "Implemented user authentication and verification using Firebase",
         "Implemented a rich text editor called TipTap that converts HTML to JSON and vice versa",
-        "Implemented a database that stores user data in a NoSQL format w/ MongoDB",
+        "Implemented a NoSql database with MongoDB",
         "Improved accessibility by utilizing Radix primitives",
-        "Optimized state management by a lightweight Redux alternative, Zustand"
+        "Optimized state management by using a lightweight Redux alternative, Zustand"
       ]
     },
     "technologies": [
@@ -119,16 +145,16 @@
       "description": "A fullstack serverless application which queries the TMDB database for currently and upcoming films depending on the country you select. Allows a user to create an account, login, and save/delete movies to & from their watchlist which is stored in a database",
       "bulletPoints": [
         "Implemented user authentication/storage via Firebase",
-        "User data is and saved movies are saved in Firestore DB",
-        "Implemented session storage to retain correctly chosen country of choise",
-        "Fully responsive, changes based on device screen size"
+        "Implemented a NoSql database with Firestore",
+        "Uses session storage to retain correctly chosen country of choice",
+        "Fully responsive and optimized for all screen sizes"
       ]
     },
     "technologies": [
       "Vite",
       "React",
       "Typescript",
-      "Firebase Services",
+      "Firebase",
       "NodeJS",
       "Styled Components",
       "Axios",
@@ -150,7 +176,7 @@
         "Implements partial hydration philosophy to deliver javascript only where necessary",
         "Fully responsive design",
         "Simplified navigation by using file-based routing",
-        "Built with AstroJS framework"
+        "Optimized SEO by using AstroJS framework"
       ]
     },
     "technologies": [
