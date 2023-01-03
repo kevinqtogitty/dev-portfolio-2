@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const data = ['Main', 'About', 'Projects', 'Skills', 'Contact'];
 
-const HamburgerMenu = (ref: React.MutableRefObject<HTMLElement>) => {
+const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpenMenu = () => {
