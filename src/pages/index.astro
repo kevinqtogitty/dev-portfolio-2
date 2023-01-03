@@ -7,6 +7,9 @@ import '../styles/main.css';
 import Hero from '../components/astro/Hero.astro';
 import Socials from '../components/react/Socials';
 import Projects from '../components/astro/Projects.astro';
+import Skills from '../components/astro/Skills.astro';
+import Footer from '../components/astro/Footer.astro';
+import AboutMe from '../components/astro/AboutMe.astro';
 ---
 
 <MainLayout title="Welcome to Astro.">
@@ -14,7 +17,10 @@ import Projects from '../components/astro/Projects.astro';
   <HamburgerMenu client:media="(max-width: 500px)" />
   <Socials client:load />
   <Hero />
+  <AboutMe />
   <Projects />
+  <Skills />
+  <Footer />
 </MainLayout>
 
 <style is:global></style>
