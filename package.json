@@ -17,7 +17,10 @@
     "@react-spring/web": "^9.6.1",
     "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/ionicons-outline": "^10.46.0",
+    "@styled-icons/material-outlined": "^10.47.0",
     "@styled-icons/remix-line": "^10.46.0",
+    "@styled-icons/simple-icons": "^10.46.0",
+    "@styled-icons/zondicons": "^10.46.0",
     "@types/react": "^18.0.26",
     "astro": "^1.8.0",
     "styled-components": "^5.3.6"
