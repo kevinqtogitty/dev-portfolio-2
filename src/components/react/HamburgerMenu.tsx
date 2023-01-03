@@ -3,7 +3,7 @@ import { Close, Menu } from '@styled-icons/ionicons-outline';
 import type React from 'react';
 import { useState } from 'react';
 
-const data = ['Main', 'Projects', 'Skills', 'About', 'Contact'];
+const data = ['Main', 'About', 'Projects', 'Skills', 'Contact'];
 
 const HamburgerMenu = (ref: React.MutableRefObject<HTMLElement>) => {
   const [open, setOpen] = useState(false);
@@ -69,7 +69,7 @@ const SlidingMenu: React.FC<Props> = ({ handleOpenMenu, open }) => {
             className="mobile-menu-li"
             onClick={() => handleOpenMenu()}
           >
-            {data[i]}
+            <a href={`#page-${i}`}>{data[i]}</a>
           </a.li>
         ))}
       </ul>
