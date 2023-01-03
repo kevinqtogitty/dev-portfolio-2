@@ -4,13 +4,29 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { Linkedin, Github } from '@styled-icons/boxicons-logos';
 import { Mail } from '@styled-icons/ionicons-outline';
 import { FilePaper2 } from '@styled-icons/remix-line';
-import type { ReactNode } from 'react';
+import resume from '../../assets/documents/KevinToResume.pdf';
 
 const data = [
-  { name: 'Github', icon: <Github className="socials-icon" /> },
-  { name: 'Linkedin', icon: <Linkedin className="socials-icon" /> },
-  { name: 'Email', icon: <Mail className="socials-icon" /> },
-  { name: 'Resume', icon: <FilePaper2 className="socials-icon" /> }
+  {
+    name: 'Github',
+    icon: <Github className="socials-icon" />,
+    link: 'https://www.github.com/kevinqtogitty'
+  },
+  {
+    name: 'Linkedin',
+    icon: <Linkedin className="socials-icon" />,
+    link: 'https://www.linkedin.com/in/kevinqto/'
+  },
+  {
+    name: 'Email',
+    icon: <Mail className="socials-icon" />,
+    link: 'mailto:kevinq.to@gmail.com'
+  },
+  {
+    name: 'Resume',
+    icon: <FilePaper2 className="socials-icon" />,
+    link: resume
+  }
 ];
 
 const Socials = () => {
@@ -21,7 +37,9 @@ const Socials = () => {
           {data.map((item, i) => (
             <Tooltip.Root key={i}>
               <Tooltip.Trigger className="socials-trigger">
-                {item.icon}
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  {item.icon}
+                </a>
               </Tooltip.Trigger>
               <Tooltip.Portal>
                 <Tooltip.Content
