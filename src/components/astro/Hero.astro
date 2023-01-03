@@ -2,7 +2,7 @@
 import profilePicture from '../../assets/pictures/profileMe.jpg';
 ---
 
-<main class="hero-main">
+<main class="hero-main" id="page-0">
   <section class="hero-section">
     <article class="hero-article">
       <h1 class="hero-h1">
@@ -14,6 +14,15 @@ import profilePicture from '../../assets/pictures/profileMe.jpg';
         > based in the US. I specialize in building beautiful and functional user
         interfaces with clean and performant code
       </p>
+      <div class="hero-button-container">
+        <a
+          href="mailto:kevinq.to@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="hero-button">Hire me!</button>
+        </a>
+      </div>
     </article>
     <img class="hero-img" src={profilePicture} alt="Picture of Kevin" />
   </section>
