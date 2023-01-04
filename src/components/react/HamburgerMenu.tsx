@@ -1,9 +1,34 @@
-import { a, useSpring, useTrail } from '@react-spring/web';
-import { Close, Menu } from '@styled-icons/ionicons-outline';
 import type React from 'react';
+import { a, useSpring, useTrail } from '@react-spring/web';
+import { Github, Linkedin } from '@styled-icons/boxicons-logos';
+import { Close, Mail, Menu } from '@styled-icons/ionicons-outline';
+import { FilePaper2 } from '@styled-icons/remix-line';
 import { useState } from 'react';
+import resume from '../../assets/documents/KevinToResume.pdf';
 
 const data = ['Main', 'About', 'Projects', 'Skills', 'Contact'];
+const socials = [
+  {
+    name: 'Github',
+    icon: <Github className="socials-icon mobile" />,
+    link: 'https://www.github.com/kevinqtogitty'
+  },
+  {
+    name: 'Linkedin',
+    icon: <Linkedin className="socials-icon mobile" />,
+    link: 'https://www.linkedin.com/in/kevinqto/'
+  },
+  {
+    name: 'Email',
+    icon: <Mail className="socials-icon mobile" />,
+    link: 'mailto:kevinq.to@gmail.com'
+  },
+  {
+    name: 'Resume',
+    icon: <FilePaper2 className="socials-icon mobile" />,
+    link: resume
+  }
+];
 
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
@@ -49,7 +74,6 @@ const SlidingMenu: React.FC<Props> = ({ handleOpenMenu, open }) => {
       id="hamburger-primary-navigation"
     >
       <div className="mobile-h2-close-container">
-        <h2 className="mobile-menu-h2">Menu</h2>
         <button
           className="mobile-menu-toggle"
           onClick={() => handleOpenMenu()}
@@ -71,6 +95,15 @@ const SlidingMenu: React.FC<Props> = ({ handleOpenMenu, open }) => {
           >
             <a href={`#page-${i}`}>{data[i]}</a>
           </a.li>
+        ))}
+      </ul>
+      <ul className="mobile-menu-socials-ul">
+        {socials.map((item, i) => (
+          <li className="mobile-menu-socials-li">
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.icon}
+            </a>
+          </li>
         ))}
       </ul>
     </a.div>
