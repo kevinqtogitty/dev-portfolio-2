@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import resume from '../../assets/documents/KevinToResume.pdf';
