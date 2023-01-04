@@ -33,8 +33,8 @@
     "thumbnail": "/project_photos/reeltalk.jpg",
     "gif": "../../assets/gifs/hotel-page.gif",
     "info": {
-      "card_description": "Modern and fully responsive landing page for HURON hotel, inspired by Japanese design",
-      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. It randomly retrieves a random cocktail recipe. Made for bartenders who need to brainstorm ideas for drink specials, and party people!",
+      "card_description": "Modern and fully responsive landing page for HURON hotel, inspired by Japanese design. ",
+      "description": "Designed and built a fully responsive landing page for the HURON hotel, inspired by a clean and minimal Japanese aesthetic",
       "bulletPoints": [
         "Developed with a mobile first approach",
         "Implements intersection observer for scroll based navigation style change",
@@ -60,7 +60,7 @@
     "gif": "../../assets/gifs/random-cocktail.gif",
     "info": {
       "card_description": "A funky minimalist cocktail generator using CocktailDB",
-      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. It randomly retrieves a random cocktail recipe. Made for bartenders who need to brainstorm ideas for drink specials, and party people!",
+      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. Made for bartenders who need to brainstorm ideas for drink specials, and party people",
       "bulletPoints": [
         "Optimized for accessbility by implementing keyboard events",
         "Implemeneted micro-interactions for increased user engagement",
@@ -86,7 +86,7 @@
     "gif": "../../assets/gifs/aol-messenger.gif",
     "info": {
       "card_description": "Real-time chat app in the style of AIM and Windows XP using websockets",
-      "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a ScreenName and private room, other users can join that room given the code and chat with each other. Yes, it even contains those familiar AIM notification sounds!",
+      "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a screennem and private room, other users can join that room given the code and chat with each other, reciving instantaneous updates. Yes, it even contains those familiar AIM notification sounds!",
       "bulletPoints": [
         "Developed a realtime chat application in the style of AIM from windows XP",
         "Implemented websockets w/ socket.io for instant updates between users",
@@ -112,7 +112,7 @@
     "gif": "../../assets/gifs/announce-it.gif",
     "info": {
       "card_description": "Fullstack MERN Team announcement application",
-      "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
+      "description": "A fullstack webapp to create teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
       "bulletPoints": [
         "Implemented user authentication and verification using Firebase",
         "Implemented a rich text editor called TipTap that converts HTML to JSON and vice versa",
