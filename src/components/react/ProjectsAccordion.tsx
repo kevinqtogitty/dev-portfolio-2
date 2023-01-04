@@ -36,11 +36,6 @@ const ProjectsAccordion = () => {
               <div className=" projects-content-left">
                 <div className="projects-content-card">
                   <p>{item.info.description}</p>
-                  {/* <ul className="projects-bullet-list">
-                  {item.info.bulletPoints.map((item, i) => (
-                    <li key={i}>- {item}</li>
-                  ))}
-                </ul> */}
                   <ul className="projects-tech-list">
                     {item.technologies.map((item, i) => (
                       <>
@@ -73,9 +68,6 @@ const ProjectsAccordion = () => {
                   alt={`${item.projectName}`}
                   className="projects-gif"
                 />
-                {/* <p className="projects-description">
-                  {item.info.card_description}
-                </p> */}
                 <span className="projects-links-span mobile">
                   <Tooltip.Provider>
                     <ProjectsLinkTooltip
