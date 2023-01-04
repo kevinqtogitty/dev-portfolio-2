@@ -22,11 +22,6 @@ const socials = [
     name: 'Email',
     icon: <Mail className="socials-icon mobile" />,
     link: 'mailto:kevinq.to@gmail.com'
-  },
-  {
-    name: 'Resume',
-    icon: <FilePaper2 className="socials-icon mobile" />,
-    link: resume
   }
 ];
 
@@ -105,6 +100,11 @@ const SlidingMenu: React.FC<Props> = ({ handleOpenMenu, open }) => {
             </a>
           </li>
         ))}
+        <div className="hero-button-container resume">
+          <a href={resume} target="_blank" rel="noopener noreferrer">
+            <button className="hero-button resume mobile">Resume</button>
+          </a>
+        </div>
       </ul>
     </a.div>
   );
