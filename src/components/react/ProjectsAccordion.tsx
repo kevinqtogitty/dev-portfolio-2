@@ -64,6 +64,7 @@ const ProjectsAccordion = () => {
                       className={'projects-new-window-icon'}
                     />
                   ) : null}
+                  <MoreInfoTooltip items={item.info.bulletPoints} />
                 </span>
               </div>
               <div className="projects-content-right">
@@ -128,6 +129,36 @@ const ProjectsLinkTooltip: React.FC<Props> = ({ url, className, iconKey }) => {
             side="bottom"
           >
             {iconKey === 1 ? 'Source code' : 'Live demo'}
+            <Tooltip.Arrow className="socials-tooltip-arrow" />
+          </Tooltip.Content>
+        </Tooltip.Portal>
+      </Tooltip.Root>
+    </Tooltip.Provider>
+  );
+};
+
+interface MoreInfoProps {
+  items: string[];
+}
+
+const MoreInfoTooltip: React.FC<MoreInfoProps> = ({ items }) => {
+  return (
+    <Tooltip.Provider>
+      <Tooltip.Root>
+        <Tooltip.Trigger className="more-info-trigger">
+          More info...
+        </Tooltip.Trigger>
+        <Tooltip.Portal>
+          <Tooltip.Content
+            className="socials-content"
+            sideOffset={5}
+            side="bottom"
+          >
+            <ul className="more-info-ul">
+              {items.map((item) => (
+                <li className="more-info-li">{item}</li>
+              ))}
+            </ul>
             <Tooltip.Arrow className="socials-tooltip-arrow" />
           </Tooltip.Content>
         </Tooltip.Portal>
