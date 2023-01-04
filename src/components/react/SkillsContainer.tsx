@@ -15,32 +15,6 @@ import {
   Styledcomponents
 } from '@styled-icons/simple-icons';
 
-const SkillsContainer = () => {
-  return (
-    <article className="skills-container">
-      {icons.map((tech) => (
-        <IconCard icon={tech.icon} name={tech.name} />
-      ))}
-    </article>
-  );
-};
-
-export default SkillsContainer;
-
-interface Props {
-  icon: JSX.Element;
-  name: string;
-}
-
-const IconCard: React.FC<Props> = ({ icon, name }) => {
-  return (
-    <div className="skills-item-card" data-name={`${name}`}>
-      {icon}
-      <p className="skills-name">{name}</p>
-    </div>
-  );
-};
-
 const icons = [
   {
     icon: <Html5 className="skills-icon" aria-label="HTML Icon" />,
@@ -93,3 +67,29 @@ const icons = [
     name: 'Styled Components'
   }
 ];
+
+const SkillsContainer = () => {
+  return (
+    <article className="skills-container">
+      {icons.map((tech) => (
+        <IconCard icon={tech.icon} name={tech.name} />
+      ))}
+    </article>
+  );
+};
+
+export default SkillsContainer;
+
+interface Props {
+  icon: JSX.Element;
+  name: string;
+}
+
+const IconCard: React.FC<Props> = ({ icon, name }) => {
+  return (
+    <div className="skills-item-card" data-name={`${name}`}>
+      {icon}
+      <p className="skills-name">{name}</p>
+    </div>
+  );
+};
