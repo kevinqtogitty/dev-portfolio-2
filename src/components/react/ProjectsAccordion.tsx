@@ -14,8 +14,9 @@ import wpGif from '../../assets/gifs/whats-playing.gif';
 import aiGif from '../../assets/gifs/announce-it.gif';
 import rtGif from '../../assets/gifs/reel-talk.gif';
 import hpGif from '../../assets/gifs/hotel-page.gif';
+import ggGif from '../../assets/gifs/galaxy-gen.gif';
 
-const gifs = [ppGif, hpGif, cgGif, amGif, aiGif, wpGif, rtGif];
+const gifs = [ppGif, hpGif, ggGif, cgGif, amGif, aiGif, wpGif, rtGif];
 
 const ProjectsAccordion = () => {
   return (
