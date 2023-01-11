@@ -26,7 +26,11 @@ const ProjectsAccordion = () => {
       className="projects-accordion-root"
     >
       {data.map((item, i) => (
-        <Accordion.Item value={`item-${i}`} className="projects-accordion-item">
+        <Accordion.Item
+          value={`item-${i}`}
+          className="projects-accordion-item"
+          key={i}
+        >
           <Accordion.Trigger className="projects-accordion-trigger">
             {item.projectName}
             <ChevronDown className="projects-chevron" />
@@ -147,8 +151,10 @@ const MoreInfoTooltip: React.FC<MoreInfoProps> = ({ items }) => {
             side="bottom"
           >
             <ul className="more-info-ul">
-              {items.map((item) => (
-                <li className="more-info-li">{item}</li>
+              {items.map((item, i) => (
+                <li className="more-info-li" key={i}>
+                  {item}
+                </li>
               ))}
             </ul>
             <Tooltip.Arrow className="socials-tooltip-arrow" />
