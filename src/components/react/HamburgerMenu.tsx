@@ -2,9 +2,8 @@ import type React from 'react';
 import { a, useSpring, useTrail } from '@react-spring/web';
 import { Github, Linkedin } from '@styled-icons/boxicons-logos';
 import { Close, Mail, Menu } from '@styled-icons/ionicons-outline';
-import { FilePaper2 } from '@styled-icons/remix-line';
 import { useState } from 'react';
-import resume from '../../assets/documents/KevinToResume.pdf';
+import resume from '../../assets/documents/KevinToResume3.pdf';
 
 const data = ['Main', 'About', 'Projects', 'Skills', 'Contact'];
 const socials = [
@@ -94,7 +93,7 @@ const SlidingMenu: React.FC<Props> = ({ handleOpenMenu, open }) => {
       </ul>
       <ul className="mobile-menu-socials-ul">
         {socials.map((item, i) => (
-          <li className="mobile-menu-socials-li">
+          <li className="mobile-menu-socials-li" key={i}>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               {item.icon}
             </a>
