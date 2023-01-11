@@ -4,7 +4,7 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { Linkedin, Github } from '@styled-icons/boxicons-logos';
 import { Mail } from '@styled-icons/ionicons-outline';
 import { FilePaper2 } from '@styled-icons/remix-line';
-import resume from '../../assets/documents/KevinToResume.pdf';
+import resume from '../../assets/documents/KevinToResume3.pdf';
 
 const data = [
   {
