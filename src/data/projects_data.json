@@ -5,7 +5,7 @@
     "gif": "../../assets/gifs/photo-website.gif",
     "info": {
       "card_description": "Photography portfolio and E-commerce store powered by Stripe",
-      "description": "A desktop/mobile friendly website to host my personal photography projects. Has a print store which uses the prebuilt checkout from the Stripe API. Store cart state migrated from Context API to Redux Toolkit.",
+      "description": "A responsive photography website and print store, designed with a mobile first approach. Uses Redux Toolkit to manage state, Stripe for payments and billing, and Cloudflare CDN for deployment",
       "bulletPoints": [
         "Implemented payment and billing functionality via Stripe API",
         "Reduced global content delivery wait times by deploying to Cloudflare CDN",
@@ -55,12 +55,31 @@
     "isFullyFunctional": true
   },
   {
+    "projectName": "3D Galaxy Generator",
+    "thumbnail": "/project_photos/reeltalk.jpg",
+    "gif": "../../assets/gifs/galaxy-gen.gif",
+    "info": {
+      "card_description": "",
+      "description": "A 3D experience built with ThreeJS, webGL, and HTML canvas. It allows a user to create a galaxy by changing properties in a gui.",
+      "bulletPoints": [
+        "Galaxy uses a particle system and randomization to render out points in 3D space",
+        "Implements trigonometry and 3D cartesian coordinate system to render",
+        "Uses webGL to render 3D system on HTML canvas",
+        "Uses an imperative object oriented programming method"
+      ]
+    },
+    "technologies": ["ThreeJS", "Javascript", "webGL", "webpack", "Vercel"],
+    "githubUrl": "https://github.com/kevinqtogitty/threejs-galaxy-generator",
+    "liveUrl": "https://galaxy-generator-tau-rust.vercel.app/",
+    "isFullyFunctional": true
+  },
+  {
     "projectName": "Random Cocktail Generator",
     "thumbnail": "/project_photos/reeltalk.jpg",
     "gif": "../../assets/gifs/random-cocktail.gif",
     "info": {
       "card_description": "A funky minimalist cocktail generator using CocktailDB",
-      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. Made for bartenders who need to brainstorm ideas for drink specials, and party people",
+      "description": "Playfully designed, inspired by pastel 70's style using CocktailDB. Made for bartenders who need to brainstorm ideas for drink specials, and party people",
       "bulletPoints": [
         "Optimized for accessbility by implementing keyboard events",
         "Implemeneted micro-interactions for increased user engagement",
@@ -86,7 +105,7 @@
     "gif": "../../assets/gifs/aol-messenger.gif",
     "info": {
       "card_description": "Real-time chat app in the style of AIM and Windows XP using websockets",
-      "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a screennem and private room, other users can join that room given the code and chat with each other, reciving instantaneous updates. Yes, it even contains those familiar AIM notification sounds!",
+      "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a screennem and private room, other users can join that room given the code and chat with each other, recieving instantaneous updates. Yes, it even contains those familiar AIM notification sounds!",
       "bulletPoints": [
         "Developed a realtime chat application in the style of AIM from windows XP",
         "Implemented websockets w/ socket.io for instant updates between users",
