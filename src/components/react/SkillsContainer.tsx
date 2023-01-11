@@ -71,8 +71,8 @@ const icons = [
 const SkillsContainer = () => {
   return (
     <article className="skills-container">
-      {icons.map((tech) => (
-        <IconCard icon={tech.icon} name={tech.name} />
+      {icons.map((tech, i) => (
+        <IconCard icon={tech.icon} name={tech.name} key={i} />
       ))}
     </article>
   );
