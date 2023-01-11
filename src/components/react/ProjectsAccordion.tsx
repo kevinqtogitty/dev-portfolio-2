@@ -22,7 +22,7 @@ const ProjectsAccordion = () => {
   return (
     <Accordion.Root
       type="single"
-      defaultValue="item-0"
+      defaultValue="item-2"
       collapsible
       className="projects-accordion-root"
     >
