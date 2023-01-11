@@ -1,7 +1,7 @@
 import type React from 'react';
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import resume from '../../assets/documents/KevinToResume.pdf';
+import resume from '../../assets/documents/KevinToResume3.pdf';
 
 const data = ['Main', 'About', 'Projects', 'Skills', 'Contact'];
 
@@ -10,7 +10,11 @@ const DesktopMenu = () => {
     <NavigationMenu.Root className="desktop-menu-bar" id="primary-navigation">
       <NavigationMenu.List className="desktop-menu-list">
         {data.map((item, i) => (
-          <NavigationMenu.Item className="desktop-menu-item" tabIndex={i}>
+          <NavigationMenu.Item
+            className="desktop-menu-item"
+            tabIndex={i}
+            key={i}
+          >
             <NavigationMenu.Link
               className="desktop-menu-link"
               href={`#page-${i}`}
