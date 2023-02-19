@@ -1,6 +1,6 @@
 [
   {
-    "projectName": "Photography Portfolio",
+    "projectName": "Photography Portfolio/Store",
     "thumbnail": "/project_photos/photography.jpg",
     "gif": "../../assets/gifs/photo-website.gif",
     "info": {
@@ -71,6 +71,33 @@
     "technologies": ["ThreeJS", "Javascript", "webGL", "webpack", "Vercel"],
     "githubUrl": "https://github.com/kevinqtogitty/threejs-galaxy-generator",
     "liveUrl": "https://galaxy-generator-tau-rust.vercel.app/",
+    "isFullyFunctional": true
+  },
+  {
+    "projectName": "3D Ping Pong Paddle Game",
+    "thumbnail": "",
+    "gif": "../../assets/gifs/ping-pong.gif",
+    "info": {
+      "card_description": "",
+      "description": "3D game made with physics using ThreeJS, React-Three-Fiber, and CannonJS/useCannon. How many time can you bounce the ball? Give it a try!",
+      "bulletPoints": [
+        "Imports 3D opensource GLTF models from sketchfab",
+        "Uses collision and impact variables to regulate volume of sound effects",
+        "React-three-fiber allows for a declaritive and clean implementation of ThreeJS"
+      ]
+    },
+    "technologies": [
+      "React",
+      "Typescript",
+      "ThreeJS",
+      "React-Three-Fiber",
+      "CannonJS/useCannon",
+      "Zustand",
+      "webGL",
+      "Vite"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/pong-game",
+    "liveUrl": "https://rb.gy/oaoqw8",
     "isFullyFunctional": true
   },
   {
